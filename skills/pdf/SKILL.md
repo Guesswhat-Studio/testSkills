@@ -2,11 +2,11 @@
 name: pdf
 description: Use this approved team skill for PDF workflows that need reading, extraction, table parsing, merging, splitting, rotation, watermarking, form filling, OCR, generation, or visual verification. If a user mentions a .pdf file or asks to produce one, use this skill and verify generated or modified PDFs before delivery.
 category: documents/pdf
-owner: @platform
+owner: "@platform"
 review_status: approved
 source_type: public_import
 source_url: https://github.com/anthropics/skills/tree/main/skills/pdf
-approved_by: @platform
+approved_by: "@platform"
 evidence: skills/pdf/review-notes/approval.md
 license: Proprietary. LICENSE.txt has complete terms
 ---
