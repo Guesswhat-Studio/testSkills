@@ -1,0 +1,152 @@
+{
+  "$schema": "https://skills-charter.dev/schemas/skills-registry.v0.json",
+  "schema_version": "skills-charter.registry.v0",
+  "generated_at": "2026-05-23T00:00:00.000Z",
+  "source": {
+    "repository": "Guesswhat-Studio/testSkills"
+  },
+  "packages": [
+    {
+      "name": "skill-creator",
+      "path": "skills/skill-creator",
+      "entrypoint": "skills/skill-creator/SKILL.md",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "category": "governance/skill-authoring",
+      "version": "0.1.0",
+      "owner": "@platform",
+      "review_status": "candidate",
+      "lifecycle": "candidate",
+      "provenance": {
+        "source_type": "public_import",
+        "source_url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+        "imported_at": "2026-05-23T00:00:00.000Z",
+        "imported_by": "@Guesswhat-Studio"
+      },
+      "evidence": {
+        "evals": [],
+        "reports": [],
+        "review_notes": [
+          "skills/skill-creator/review-notes/intake.md"
+        ],
+        "trigger_samples": []
+      },
+      "risk": "medium",
+      "risk_reasons": [
+        "external-url.review-required",
+        "asset.review-required",
+        "external-url.review-required",
+        "external-url.review-required",
+        "external-url.review-required",
+        "external-url.review-required",
+        "external-url.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required",
+        "external-url.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required"
+      ],
+      "files": [
+        {
+          "path": "skills/skill-creator/SKILL.md",
+          "kind": "entrypoint",
+          "size": 33928
+        },
+        {
+          "path": "skills/skill-creator/agents/analyzer.md",
+          "kind": "supporting",
+          "size": 10650
+        },
+        {
+          "path": "skills/skill-creator/agents/comparator.md",
+          "kind": "supporting",
+          "size": 7489
+        },
+        {
+          "path": "skills/skill-creator/agents/grader.md",
+          "kind": "supporting",
+          "size": 9272
+        },
+        {
+          "path": "skills/skill-creator/assets/eval_review.html",
+          "kind": "asset",
+          "size": 7204
+        },
+        {
+          "path": "skills/skill-creator/eval-viewer/generate_review.py",
+          "kind": "supporting",
+          "size": 16836
+        },
+        {
+          "path": "skills/skill-creator/eval-viewer/viewer.html",
+          "kind": "supporting",
+          "size": 46323
+        },
+        {
+          "path": "skills/skill-creator/LICENSE.txt",
+          "kind": "supporting",
+          "size": 11546
+        },
+        {
+          "path": "skills/skill-creator/references/schemas.md",
+          "kind": "supporting",
+          "size": 12491
+        },
+        {
+          "path": "skills/skill-creator/review-notes/intake.md",
+          "kind": "evidence",
+          "size": 1909
+        },
+        {
+          "path": "skills/skill-creator/scripts/__init__.py",
+          "kind": "script",
+          "size": 0
+        },
+        {
+          "path": "skills/skill-creator/scripts/aggregate_benchmark.py",
+          "kind": "script",
+          "size": 14787
+        },
+        {
+          "path": "skills/skill-creator/scripts/generate_report.py",
+          "kind": "script",
+          "size": 13173
+        },
+        {
+          "path": "skills/skill-creator/scripts/improve_description.py",
+          "kind": "script",
+          "size": 11363
+        },
+        {
+          "path": "skills/skill-creator/scripts/package_skill.py",
+          "kind": "script",
+          "size": 4370
+        },
+        {
+          "path": "skills/skill-creator/scripts/quick_validate.py",
+          "kind": "script",
+          "size": 4074
+        },
+        {
+          "path": "skills/skill-creator/scripts/run_eval.py",
+          "kind": "script",
+          "size": 11774
+        },
+        {
+          "path": "skills/skill-creator/scripts/run_loop.py",
+          "kind": "script",
+          "size": 13933
+        },
+        {
+          "path": "skills/skill-creator/scripts/utils.py",
+          "kind": "script",
+          "size": 1708
+        }
+      ]
+    }
+  ]
+}
