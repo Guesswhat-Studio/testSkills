@@ -1,11 +1,120 @@
 {
   "$schema": "https://skills-charter.dev/schemas/skills-registry.v0.json",
   "schema_version": "skills-charter.registry.v0",
-  "generated_at": "2026-05-23T00:00:00.000Z",
+  "generated_at": "2026-05-23T09:47:08.328Z",
   "source": {
     "repository": "Guesswhat-Studio/testSkills"
   },
   "packages": [
+    {
+      "name": "pdf",
+      "path": "skills/pdf",
+      "entrypoint": "skills/pdf/SKILL.md",
+      "description": "Use this approved team skill for PDF workflows that need reading, extraction, table parsing, merging, splitting, rotation, watermarking, form filling, OCR, generation, or visual verification. If a user mentions a .pdf file or asks to produce one, use this skill and verify generated or modified PDFs before delivery.",
+      "category": "documents/pdf",
+      "owner": "@platform",
+      "review_status": "approved",
+      "lifecycle": "approved",
+      "provenance": {
+        "source_type": "public_import",
+        "source_url": "https://github.com/anthropics/skills/tree/main/skills/pdf",
+        "approved_by": "@platform"
+      },
+      "evidence": {
+        "evals": [],
+        "reports": [],
+        "review_notes": [
+          "skills/pdf/review-notes/approval.md"
+        ],
+        "trigger_samples": []
+      },
+      "risk": "medium",
+      "risk_reasons": [
+        "external-url.review-required",
+        "external-url.review-required",
+        "external-url.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required",
+        "script.review-required"
+      ],
+      "files": [
+        {
+          "path": "skills/pdf/SKILL.md",
+          "kind": "entrypoint",
+          "size": 8918
+        },
+        {
+          "path": "skills/pdf/forms.md",
+          "kind": "supporting",
+          "size": 11854
+        },
+        {
+          "path": "skills/pdf/LICENSE.txt",
+          "kind": "supporting",
+          "size": 1467
+        },
+        {
+          "path": "skills/pdf/reference.md",
+          "kind": "supporting",
+          "size": 16692
+        },
+        {
+          "path": "skills/pdf/review-notes/approval.md",
+          "kind": "evidence",
+          "size": 1558
+        },
+        {
+          "path": "skills/pdf/scripts/check_bounding_boxes.py",
+          "kind": "script",
+          "size": 2774
+        },
+        {
+          "path": "skills/pdf/scripts/check_fillable_fields.py",
+          "kind": "script",
+          "size": 268
+        },
+        {
+          "path": "skills/pdf/scripts/convert_pdf_to_images.py",
+          "kind": "script",
+          "size": 1008
+        },
+        {
+          "path": "skills/pdf/scripts/create_validation_image.py",
+          "kind": "script",
+          "size": 1258
+        },
+        {
+          "path": "skills/pdf/scripts/extract_form_field_info.py",
+          "kind": "script",
+          "size": 4300
+        },
+        {
+          "path": "skills/pdf/scripts/extract_form_structure.py",
+          "kind": "script",
+          "size": 3945
+        },
+        {
+          "path": "skills/pdf/scripts/fill_fillable_fields.py",
+          "kind": "script",
+          "size": 3819
+        },
+        {
+          "path": "skills/pdf/scripts/fill_pdf_form_with_annotations.py",
+          "kind": "script",
+          "size": 3235
+        }
+      ],
+      "install": [
+        "npx skills add Guesswhat-Studio/testSkills --skill pdf -g -a codex",
+        "npx skills add Guesswhat-Studio/testSkills --skill pdf -g -a claude-code",
+        "npx skills add Guesswhat-Studio/testSkills --skill pdf -g -a antigravity"
+      ]
+    },
     {
       "name": "skill-creator",
       "path": "skills/skill-creator",
