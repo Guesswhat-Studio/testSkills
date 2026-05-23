@@ -1,7 +1,7 @@
 {
   "$schema": "https://skills-charter.dev/schemas/skills-registry.v0.json",
   "schema_version": "skills-charter.registry.v0",
-  "generated_at": "2026-05-23T09:47:08.328Z",
+  "generated_at": "2026-05-23T14:53:28.831Z",
   "source": {
     "repository": "Guesswhat-Studio/testSkills"
   },
@@ -123,18 +123,21 @@
       "category": "governance/skill-authoring",
       "version": "0.1.0",
       "owner": "@platform",
-      "review_status": "candidate",
-      "lifecycle": "candidate",
+      "review_status": "approved",
+      "lifecycle": "approved",
       "provenance": {
         "source_type": "public_import",
         "source_url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
         "imported_at": "2026-05-23T00:00:00.000Z",
-        "imported_by": "@Guesswhat-Studio"
+        "imported_by": "@Guesswhat-Studio",
+        "approved_by": "@platform",
+        "approved_at": "2026-05-23"
       },
       "evidence": {
         "evals": [],
         "reports": [],
         "review_notes": [
+          "skills/skill-creator/review-notes/approval.md",
           "skills/skill-creator/review-notes/intake.md"
         ],
         "trigger_samples": []
@@ -143,6 +146,7 @@
       "risk_reasons": [
         "external-url.review-required",
         "asset.review-required",
+        "external-url.review-required",
         "external-url.review-required",
         "external-url.review-required",
         "external-url.review-required",
@@ -163,47 +167,52 @@
         {
           "path": "skills/skill-creator/SKILL.md",
           "kind": "entrypoint",
-          "size": 33928
+          "size": 33552
         },
         {
           "path": "skills/skill-creator/agents/analyzer.md",
           "kind": "supporting",
-          "size": 10650
+          "size": 10376
         },
         {
           "path": "skills/skill-creator/agents/comparator.md",
           "kind": "supporting",
-          "size": 7489
+          "size": 7287
         },
         {
           "path": "skills/skill-creator/agents/grader.md",
           "kind": "supporting",
-          "size": 9272
+          "size": 9049
         },
         {
           "path": "skills/skill-creator/assets/eval_review.html",
           "kind": "asset",
-          "size": 7204
+          "size": 7058
         },
         {
           "path": "skills/skill-creator/eval-viewer/generate_review.py",
           "kind": "supporting",
-          "size": 16836
+          "size": 16365
         },
         {
           "path": "skills/skill-creator/eval-viewer/viewer.html",
           "kind": "supporting",
-          "size": 46323
+          "size": 44998
         },
         {
           "path": "skills/skill-creator/LICENSE.txt",
           "kind": "supporting",
-          "size": 11546
+          "size": 11345
         },
         {
           "path": "skills/skill-creator/references/schemas.md",
           "kind": "supporting",
-          "size": 12491
+          "size": 12061
+        },
+        {
+          "path": "skills/skill-creator/review-notes/approval.md",
+          "kind": "evidence",
+          "size": 1643
         },
         {
           "path": "skills/skill-creator/review-notes/intake.md",
@@ -218,43 +227,48 @@
         {
           "path": "skills/skill-creator/scripts/aggregate_benchmark.py",
           "kind": "script",
-          "size": 14787
+          "size": 14386
         },
         {
           "path": "skills/skill-creator/scripts/generate_report.py",
           "kind": "script",
-          "size": 13173
+          "size": 12847
         },
         {
           "path": "skills/skill-creator/scripts/improve_description.py",
           "kind": "script",
-          "size": 11363
+          "size": 11116
         },
         {
           "path": "skills/skill-creator/scripts/package_skill.py",
           "kind": "script",
-          "size": 4370
+          "size": 4234
         },
         {
           "path": "skills/skill-creator/scripts/quick_validate.py",
           "kind": "script",
-          "size": 4074
+          "size": 3972
         },
         {
           "path": "skills/skill-creator/scripts/run_eval.py",
           "kind": "script",
-          "size": 11774
+          "size": 11464
         },
         {
           "path": "skills/skill-creator/scripts/run_loop.py",
           "kind": "script",
-          "size": 13933
+          "size": 13605
         },
         {
           "path": "skills/skill-creator/scripts/utils.py",
           "kind": "script",
-          "size": 1708
+          "size": 1661
         }
+      ],
+      "install": [
+        "npx skills add Guesswhat-Studio/testSkills --skill skill-creator -g -a codex",
+        "npx skills add Guesswhat-Studio/testSkills --skill skill-creator -g -a claude-code",
+        "npx skills add Guesswhat-Studio/testSkills --skill skill-creator -g -a antigravity"
       ]
     }
   ]

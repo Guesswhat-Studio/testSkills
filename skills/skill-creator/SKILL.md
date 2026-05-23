@@ -4,11 +4,14 @@ description: Create new skills, modify and improve existing skills, and measure 
 category: governance/skill-authoring
 version: "0.1.0"
 owner: "@platform"
-review_status: candidate
+review_status: approved
 source_type: public_import
 source_url: https://github.com/anthropics/skills/tree/main/skills/skill-creator
 imported_at: "2026-05-23T00:00:00.000Z"
 imported_by: "@Guesswhat-Studio"
+approved_by: "@platform"
+approved_at: "2026-05-23"
+evidence: skills/skill-creator/review-notes/approval.md
 ---
 
 # Skill Creator
